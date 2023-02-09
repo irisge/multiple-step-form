@@ -30,12 +30,12 @@ export const NextStepButton = styled.button`
 
 export const StyledFooter = styled.div`
   width: 100%;
-  height: auto;
+  height: 72px;
   padding: 0;
   margin: 0;
   bottom: 0;
   position: fixed;
-
+    
   div {
     display: flex;
     flex-direction: row;

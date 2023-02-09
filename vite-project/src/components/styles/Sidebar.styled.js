@@ -21,7 +21,8 @@ export const StyledSidebar = styled.div`
     min-width: 100%;
   }
 
-  NavLink,a {
+  NavLink,
+  a {
     border: solid 1px white;
     border-radius: 50%;
     color: #fff;

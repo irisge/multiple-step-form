@@ -1,5 +1,60 @@
 import styled from 'styled-components';
-import { denim, grey, redErrors, veryLightGrey } from './Global';
+import { denim, grey, purple, redErrors, veryLightGrey } from './Global';
+
+export const Resume = styled.div`
+  background: ${veryLightGrey};
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+
+  p {
+    white-space: nowrap;
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: ${grey};
+    text-decoration: underline;
+    width: 100%;
+  }
+
+  h4 {
+    display: flex;
+    padding: 0 1rem;
+  }
+
+  hr {
+    border: 1px solid ${grey};
+    margin: 0 1rem;
+  }
+
+  h4:nth-child(2) {
+    color: ${denim};
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price {
+    font-weight: bold;
+  }
+
+  .planContainer {
+  }
+
+  h3 {
+    padding: 0 1rem;
+  }
+`;
 
 export const Button = styled.button`
   background: none;
@@ -8,11 +63,26 @@ export const Button = styled.button`
   margin: 0.75rem 0;
   display: flex;
   width: 100%;
+  height: auto;
+  overflow: scroll;
+
+  :active,
+  :hover,
+  :after,
+  .checked {
+    background: ${veryLightGrey};
+    border: 1px solid ${purple};
+  }
+
+  button {
+    background: none;
+    border: none;
+  }
 
   .container {
     display: flex;
     flex-direction: row;
-    width: 37%;
+    width: 100%;
     justify-content: space-between;
     margin: 0 0.475rem;
   }
@@ -24,6 +94,7 @@ export const Button = styled.button`
     margin: 0 0.875rem;
     justify-content: space-between;
     width: 100%;
+    padding: 0;
   }
 
   .options-container {
@@ -41,9 +112,7 @@ export const Button = styled.button`
   }
 
   .options-text-container {
-
   }
-
 `;
 
 export const StyledModal = styled.div`
@@ -56,6 +125,12 @@ export const StyledModal = styled.div`
   border-radius: 0.625rem;
   position: fixed;
   top: 6.188rem;
+
+  button {
+    flex-flow: flex-column;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
 
   div {
     flex-flow: flex-column;
@@ -229,5 +304,20 @@ export const StyledModal = styled.div`
     text-align: left;
     white-space: nowrap;
     color: ${denim};
+  }
+
+  .total {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .total h4, .total h3 {
+    display: block;
+  }
+
+  .total h3 {
+    color: ${purple}
   }
 `;

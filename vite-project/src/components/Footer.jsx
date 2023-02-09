@@ -15,6 +15,8 @@ function Footer({ hide }) {
   const goForward = () => {
     navigate(1);
   };
+
+  // console.log(path[1])
   return (
     <StyledFooter>
       <div>

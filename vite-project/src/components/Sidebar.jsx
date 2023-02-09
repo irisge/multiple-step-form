@@ -22,7 +22,7 @@ function Sidebar() {
         <NavLink to="/add-ons" style={getActiveLinkStyle}>
           <span>3</span>
         </NavLink>
-        <NavLink to="/src/views/Step4.jsx" style={getActiveLinkStyle}>
+        <NavLink to="/confirm-submission" style={getActiveLinkStyle}>
           <span>4</span>
         </NavLink>
       </nav>

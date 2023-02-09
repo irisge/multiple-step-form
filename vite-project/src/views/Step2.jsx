@@ -3,13 +3,15 @@ import GlobalStyles from '../components/styles/Global';
 import Sidebar from '../components/Sidebar';
 import ModalPlan from '../components/ModalPlan';
 import Footer from '../components/Footer';
+import { usePlanContext } from '../contexts/PlanContext';
 
-function Step2({ yearly, setYearly }) {
+function Step2() {
+  const { yearly, setYearly, plan, setPlan } = usePlanContext();
   return (
     <>
       <GlobalStyles />
       <Sidebar />
-      <ModalPlan yearly={yearly} setYearly={setYearly} />
+      <ModalPlan />
       <Footer />
     </>
   );

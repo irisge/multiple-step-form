@@ -9,7 +9,7 @@ function Step3({ yearly }) {
     <>
       <GlobalStyles />
       <Sidebar />
-      <ModalAddOns yearly={yearly} />
+      <ModalAddOns />
       <Footer />
     </>
   );
